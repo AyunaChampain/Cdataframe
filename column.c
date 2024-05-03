@@ -86,4 +86,4 @@ int inf_x_col(COLUMN* col, int x)
             CptInf++;
         }
     }
-/*int equ_x_col(COLUMN* col, int x)*/
+/*int equ_x_col(COLUMN* col, int x) même fonction*/
