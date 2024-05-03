@@ -45,11 +45,13 @@ void print_col(COLUMN* col)
     }
 }
 
-int occur_col(COLUMN* col, int x){
+int occur(COLUMN* col, int x){
     int i;
-    int cpt;
+    int cpt = 0;
+    int valeur;
     for(i = 0; i < REALOC_SIZE ; i++){
-        if (col[i] == x){
+        valeur = col -> val[i];
+        if (valeur == x){
             cpt++;
         }
     }
