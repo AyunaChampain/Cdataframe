@@ -8,8 +8,8 @@
 COLUMN *create_column(char* title)
 {
     COLUMN * p ;
-    COLUMN c = {title, REALOC_SIZE, 0};
-    return &c ;
+    COLUMN * c = {title, REALOC_SIZE, 0};
+    return c ;
 }
 
 
