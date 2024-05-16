@@ -20,6 +20,7 @@ int insert_value(COLUMN* col, int value)
     if (taille == 0)
     {
         (col -> val[0]) = value ;
+        col -> TL ++ ;
         return 1 ;
     }
     if (taille < REALOC_SIZE)
