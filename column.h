@@ -17,7 +17,7 @@ typedef struct
 
 COLUMN *create_column(char* title);
 int insert_value(COLUMN* col, int value);
-void delete_column(void **col);
+void delete_column(COLUMN **col);
 void print_col(COLUMN* col);
 
 int occur(COLUMN* col, int x);

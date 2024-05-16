@@ -37,18 +37,18 @@ int insert_value(COLUMN* col, int value)
     }
 }
 
-void delete_column(void **col) {
+void delete_column(COLUMN **col) //Free allocated memory
+{
     free(*col);
-    printf("Flag");
 }
 
 void print_col(COLUMN* col)
 {
     int i ;
-    //printf("\ncol%d\n", col -> TL);
+    printf("\ncol%d\n", col -> TL);
     for (i = 0; i < (col -> TL); i++)
     {
-        printf("[%d] %d\n", i, col -> val[i]);
+        printf("[%d] %d", i, col -> val[i]);
     }
 }
 
