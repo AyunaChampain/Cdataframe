@@ -11,15 +11,17 @@ int main() {
     CDataframe Cdf;
 
     COLUMN *mycol = create_column("My column");
+
     int val = 5;
     int test = insert_value(mycol, val) ;
-    if (test == 0)
+    if (test == 1)
         printf("Value added successfully to my column\n");
     else
         printf("Error adding value to my column\n");
+    //delete_column(&mycol);
     printf("Test");
-    delete_column(&mycol);
     print_col(mycol);
+    printf("test");
 
     /*occur(mycol, val);
     pos = pos_val_col(mycol, val);
