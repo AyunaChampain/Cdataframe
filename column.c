@@ -79,7 +79,8 @@ int supp_x_col(COLUMN* col, int x)
     for(i = 0; i < REALOC_SIZE ; i++)
     {
         values = col -> val[i];
-        if (values > x){
+        if (values > x)
+        {
             cpt++;
         }
     }
@@ -94,7 +95,8 @@ int inf_x_col(COLUMN* col, int x)
     int values;
     for(i = 0; i < REALOC_SIZE ; i++){
         values = col -> val[i];
-        if (values < x){
+        if (values < x)
+        {
             cpt++;
         }
     }
