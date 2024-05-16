@@ -14,6 +14,7 @@ COLUMN *create_column(char* title)
 }
 
 
+
 int insert_value(COLUMN* col, int value)
 {
     int taille = (col->TL) ;
