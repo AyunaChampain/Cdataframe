@@ -17,6 +17,7 @@ int main() {
         printf("Value added successfully to my column\n");
     else
         printf("Error adding value to my column\n");
+    printf("Test");
     delete_column(&mycol);
     print_col(mycol);
 

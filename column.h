@@ -8,7 +8,7 @@
 
 typedef struct
 {
-    char * titre ;
+    char titre[20] ;
     int TP ;
     int TL ;
     int val[256] ;
