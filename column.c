@@ -8,9 +8,8 @@
 COLUMN *create_column(char* title)
 {
     COLUMN * p ;
-    COLUMN c = {*title, 256, 0, {}};
-    p = &c ;
-    return p ;
+    COLUMN * c = {title, REALOC_SIZE, 0, {}};
+    return c ;
 }
 
 
@@ -39,17 +38,17 @@ int insert_value(COLUMN* col, int value)
 
 void delete_column(COLUMN **col) //Free allocated memory
 {
-    free(*col);
+    free(col);
 }
 
 void print_col(COLUMN* col)
 {
     int i ;
-    printf("\ncol%d\n", col -> TL);
     for (i = 0; i < (col -> TL); i++)
     {
         printf("[%d] %d", i, col -> val[i]);
     }
+    printf("test");
 }
 
 int occur(COLUMN* col, int x){
