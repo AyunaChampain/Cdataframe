@@ -13,24 +13,30 @@ int main() {
     COLUMN *mycol = create_column("My column");
 
     int val = 5;
-    int test = insert_value(mycol, val) ;
-    if (test == 1)
-        printf("Value added successfully to my column\n");
-    else
-        printf("Error adding value to my column\n");
-    //delete_column(&mycol);
-    printf("Test");
-    print_col(mycol);
-    printf("test");
+    int i ;
+    int value ;
+    for (i=0; i < 10; i++)
+    {
+        scanf("%d", &value);
+        int test = insert_value(mycol, value) ;
+        if (test == 1)
+            printf("Value added successfully to my column\n");
+        else
+            printf("Error adding value to my column\n");
+    }
 
-    /*occur(mycol, val);
+    //delete_column(&mycol);
+    print_col(mycol);
+
+    occur(mycol, val);
     pos = pos_val_col(mycol, val);
     supp = supp_x_col(mycol, val);
     inf = inf_x_col(mycol, val);
     equal = equ_x_col(mycol, val);
+    printf("pos %d supp %d inf %d equ %d", pos, supp, inf, equal);
 
 
-    Cdf = create_empty();
+    /*Cdf = create_empty();
     enter_value(&Cdf);
     print_cdf(&Cdf);
     initialize(&Cdf);
