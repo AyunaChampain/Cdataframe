@@ -66,39 +66,52 @@ int occur(COLUMN* col, int x){
 }
 int pos_val_col(COLUMN* col, int x)
 {
-    int valeur1;
-    valeur1 = col -> val[x];
-    return valeur1;
+    int values;
+    values = col -> val[x];
+    return values;
 }
 
 int supp_x_col(COLUMN* col, int x)
 {
-    int y;
-    int CptSup = 0;
-    int value2;
-    for(y = 0; y < REALOC_SIZE ; y++)
+    int i;
+    int cpt = 0;
+    int values;
+    for(i = 0; i < REALOC_SIZE ; i++)
     {
-        value2 = col -> val[y];
-        if (value2 > x)
+        values = col -> val[i];
+        if (values > x)
         {
-            CptSup++;
+            cpt++;
         }
     }
-    return CptSup ;
+    return cpt ;
 }
 
 
 int inf_x_col(COLUMN* col, int x)
 {
-    int z;
-    int cptInf = 0;
-    int value3;
-    for(z = 0; z < REALOC_SIZE ; z++){
-        value3 = col -> val[z];
-        if (value3 < x){
-            cptInf++;
+    int i;
+    int cpt = 0;
+    int values;
+    for(i = 0; i < REALOC_SIZE ; i++){
+        values = col -> val[i];
+        if (values < x)
+        {
+            cpt++;
         }
     }
-    return cptInf;
+    return cpt;
 }
-/*int equ_x_col(COLUMN* col, int x) même fonction*/
+int equ_x_col(COLUMN* col, int x)
+{
+    int i;
+    int cpt = 0;
+    int values;
+    for(i = 0; i < REALOC_SIZE ; i++){
+        values = col -> val[i];
+        if (values == x){
+            cpt++;
+        }
+    }
+    return cpt;
+}
