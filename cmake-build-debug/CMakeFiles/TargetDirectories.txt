@@ -1,3 +1,0 @@
-C:/Users/ayuna/CLionProjects/Cdataframe/cmake-build-debug/CMakeFiles/Cdataframe.dir
-C:/Users/ayuna/CLionProjects/Cdataframe/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ayuna/CLionProjects/Cdataframe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
